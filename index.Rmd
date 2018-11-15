@@ -1,0 +1,49 @@
+---
+title: "Technologie informatyczne w pracy naukowej"
+author: "Psychologia zdrowia, 1 rok, 2018/19"
+output: html_document
+---
+
+## Terminy zajęć
+
+Zajęcia odbywają się co środy w sali 108 na Tuwima 15 w godzinach:
+
+- 8:00 - 10:15 (grupa 2)
+- 10:30 - 12:45 (grupa 3)
+- 13:00 - 15:15 (grupa 1)
+
+
+## Potrzebny software
+
+Na zajęcia potrzebujesz trzech programów:
+
+#### Anaconda 
+
+<https://www.anaconda.com/download/>. Koniecznie wybierz wersję **Python 3.7**, odpowiednią dla twojego systemu operacyjnego. Jeśli nie działa wersja 64bity, spróbuj 32. Cały proces instalacji jest udokumentowany [tutaj](http://docs.anaconda.com/anaconda/install/) - w razie problemów **przeczytaj dokładnie**.
+
+#### GitHub Desktop
+
+<http://desktop.github.com>. Wraz z zaintsalowaniem, GitHub Desktop umożliwi założenie bezpłatnego konta na serwisie [GitHub](http://github.com). Proszę założyć konto z jakąś sensowną nazwą użytkownika - będę jej potrzebować żeby sprawdzać wasze prace domowe. Polecam coś w formacie pierwsza litera imienia + nazwisko. GitHub Desktop **nie działa** na systemach 32-bitowych i na Linuksach. Jeżeli byłyby problemy, możecie spróbować któryś z poniższych:
+
+- [Git Kraken](http://docs.anaconda.com/anaconda/install/)
+- [Sourcetree](https://www.sourcetreeapp.com)
+- [Więcej](https://git-scm.com/downloads/guis)
+
+#### Edytor tekstu
+
+Zaawansowany, programistyczny edytor tekstu. Polecam [Atom](http://atom.io) (działa tylko na 64-bitowych systemach), ale dowolny edytor z kolorowaniem składni Pythona i kodowaniem UTF-8 jest ok. Alternatyw jest wiele.
+
+Cross-platform:
+
+- [Sublime Text](https://www.sublimetext.com)
+- [vim](https://www.vim.org) - uwaga, tylko dla orłów!
+- [emacs](https://www.gnu.org/software/emacs/index.html) - j.w.
+
+Tylko Windows:
+
+- [Notepad++](https://notepad-plus-plus.org)
+
+
+## Prezentacje z zajęć:
+
+- [01 - Wstęp](index.html)
