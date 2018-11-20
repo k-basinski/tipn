@@ -1,0 +1,41 @@
+---
+title: "Zadanie 1"
+output: html_document
+---
+
+#### 1.1. 
+Utwórz gdzieś na swoim komputerze folder `tipn_zad`. To będzie folder, w którym będziesz trzymać rozwiązania zadań na ten przedmiot.
+
+**UWAGA! Zwróć uwagę, nazwa tego folderu to `tipn_zad` i dokładnie taka musi być!** Nie `tipin_zad`, nie `tipn zad`, wreszcie nie `Tipn Zad`! Nazwy plików i folderów to bardzo ważne sprawy, każda literka, wielka czy mała, się tu liczy!
+
+#### 1.2. 
+Wewnątrz folderu `tipn_zad` utwórz folder `zad1`, w którym umieścisz rozwiązanie tego zadania. `zad1` dlatego, że to *zadanie 1*. 
+
+#### 1.3. 
+Wewnątrz folder `zad1` umieść trzy inne foldery, o dowolnie wybranych przez ciebie nazwach. Uwaga! Powinny to być nazwy **poprawne**, zgodne ze sztuką (krótkie, bez spacji, polskich znaków, zalecam również nie używanie wielkich liter).
+
+#### 1.4. 
+Wewnątrz każdego z folderów utworzonych w `1.3.` stwórz za pomocą edytora tekstu plik tekstowy o dowolnej treści. Każdemu z plików nadaj poprawną nazwę i rozszerzenie txt.
+
+#### 1.5. 
+W folderze `zad1` umieść plik `kto_zacz.txt`. Napisz w nim, w osobnych linijkach, swoje imię i nazwisko, nr grupy i nr. albumu. Przykładowy plik `kto_zacz.txt`:
+
+```
+Grzegorz Brzęczyszczykiewicz
+gr. 1
+nr.albumu 99666
+```
+
+Na koniec drzewo katalogu tipn powinno wyglądać jakoś tak:
+
+```
+.
+└── zad1
+    ├── drugi
+    │   └── inny_plik.txt
+    ├── kto_zacz.txt
+    ├── pierwszy
+    │   └── jakis_plik.txt
+    └── trzeci
+        └── kolejny.txt
+```

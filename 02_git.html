@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Krzysztof Basiński" />
+  <title>TIPN 2 - Git jest git</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal_libs/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="reveal_libs/reveal.js-3.3.0.1/css/theme/serif.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">TIPN 2 - Git jest git</h1>
+    <h2 class="author">Krzysztof Basiński</h2>
+</section>
+
+<section><section id="pliki-i-foldery---powtorka-z-podstawowki" class="title-slide slide level1"><h1>Pliki i foldery - powtórka z podstawówki</h1></section><section id="plik" class="slide level2">
+<h2>Plik</h2>
+<ul>
+<li class="fragment">Miejsce w pamięci, w którym trzymamy dane</li>
+<li class="fragment">Pliki mają różne typy (obrazki, dźwięki, filmy, itd.)</li>
+<li class="fragment">Odzwierciedleniem typu jest (najczęściej) <strong>rozszerzenie</strong> - litery po ostatniej kropce</li>
+</ul>
+</section><section id="nazwy-plikow---dobre-rady" class="slide level2">
+<h2>Nazwy plików - dobre rady</h2>
+<ul>
+<li class="fragment">Krótkie!</li>
+<li class="fragment"><strong>BEZ SPACJI</strong></li>
+<li class="fragment"><strong>BEZ POLSKICH ZNAKÓW</strong></li>
+</ul>
+</section><section id="folder-katalog" class="slide level2">
+<h2>Folder / katalog</h2>
+<ul>
+<li class="fragment">Foldery to miejsca, w których trzymamy pliki i inne foldery</li>
+<li class="fragment">Foldery mają strukturę drzewa</li>
+</ul>
+</section></section>
+<section><section id="git-jest-git" class="title-slide slide level1"><h1><code>Git</code> jest git</h1></section><section id="kontrola-wersji---o-co-chodzi" class="slide level2">
+<h2>Kontrola wersji - o co chodzi?</h2>
+<ul>
+<li class="fragment">Praca nad projektem to proces, rozciągnięty w czasie</li>
+<li class="fragment">Powstają różne wersje. Która jest “właściwa”?</li>
+<li class="fragment">Problem kolaboracji</li>
+</ul>
+</section><section id="po-co-mi-kontrola-wersji-skoro-moge-miec-kilka-plikow" class="slide level2">
+<h2>Po co mi kontrola wersji skoro mogę mieć kilka plików?</h2>
+<pre><code>artykul.doc
+artykul2.doc
+artykul3.doc
+artykul36.doc
+artykulFinal.doc
+artykul6-06-2018.doc
+artykul_wersja_do_druku.doc
+Promotor_poprawki_artykul.doc
+nowe_poprawki_artykul.doc
+nowenajnowsze_poprawki_artykuuuulll.foc
+ZABIERZCIEMNIESTAD!!!!.doc</code></pre>
+</section><section id="wspopraca" class="slide level2">
+<h2>Współpraca?</h2>
+</section><section id="git-jest-git-1" class="slide level2">
+<h2>Git jest git</h2>
+<ul>
+<li class="fragment">Git to jeden z systemów kontroli wersji</li>
+<li class="fragment">Stworzony dla programistów</li>
+<li class="fragment">Programy składają się z wielu długich plików</li>
+<li class="fragment">Git świetnie nadaje się do kolaboracji</li>
+<li class="fragment"><a href="http://github.com" class="uri">http://github.com</a></li>
+</ul>
+</section><section id="github" class="slide level2">
+<h2>GitHub</h2>
+<ul>
+<li class="fragment">Serwis hostingowy dla <strong>repozytoriów</strong> gitowych</li>
+<li class="fragment">Służy do hostingu i kolaboracji</li>
+<li class="fragment">Darmowy dla publicznych repozytoriów</li>
+<li class="fragment">Społeczność: 20 milionów ludzi, 50 milionów repozytoriów</li>
+<li class="fragment">Głównie dla programistów, ale nie tylko</li>
+</ul>
+</section><section id="github-desktop" class="slide level2">
+<h2>GitHub Desktop</h2>
+<ul>
+<li class="fragment">Git działa w trybie tekstowym</li>
+<li class="fragment">GitHub Desktop to program z GUI - nakładka na Gita</li>
+</ul>
+</section><section id="to-co-nam-daje-ten-git" class="slide level2">
+<h2>To co nam daje ten Git?</h2>
+<ul>
+<li class="fragment">Kontrola wersji:
+<ul>
+<li class="fragment">zapisana historia (prawie) wszystkich zmian</li>
+<li class="fragment">możliwość cofnięcia się do dowolnego punktu w czasie</li>
+<li class="fragment">łatwe porównywanie różnic pomiędzy wersjami</li>
+<li class="fragment">branches - idealne do testowania nowych rozwiązań</li>
+</ul></li>
+</ul>
+</section><section id="to-co-nam-daje-ten-git-1" class="slide level2">
+<h2>To co nam daje ten Git?</h2>
+<ul>
+<li class="fragment">Myślenie “commitami”</li>
+<li class="fragment">Łączenie zmian dokonanych na różnych wersjach przez różnych ludzi</li>
+<li class="fragment">Uporządkowaną historię współpracy - wiadomo co kto zrobił</li>
+<li class="fragment">Mechanizm zamieszczania zmian na serwerze</li>
+</ul>
+</section><section id="co-daje-github" class="slide level2">
+<h2>Co daje GitHub?</h2>
+<ul>
+<li class="fragment">Hosting dla twoich projektów</li>
+<li class="fragment">Symbiozę z Gitem (GitHub Desktop)</li>
+<li class="fragment"><strong>Społeczność</strong></li>
+<li class="fragment">Narzędzia do zarządzania projektami</li>
+<li class="fragment">Hosting stron internetowych (!) - GitHub Pages</li>
+<li class="fragment">Wszystko to za darmo</li>
+</ul>
+</section><section id="sabe-strony-gita" class="slide level2">
+<h2>Słabe strony Gita</h2>
+<ul>
+<li class="fragment">Jest trochę dziwaczny na poczatku</li>
+<li class="fragment">Może być bardzo frustrujący na początku</li>
+<li class="fragment">Słabo działa z plikami innymi niż tekstowe (np. docx, xlsx…)</li>
+</ul>
+</section></section>
+<section><section id="git---nomenklatura" class="title-slide slide level1"><h1>Git - nomenklatura</h1></section><section id="repozytorium-repo" class="slide level2">
+<h2>Repozytorium (<em>repo</em>)</h2>
+<p>Folder, w którym znajduje się jakiś projekt. Jedna historia zmian śledzona przez Gita dotyczy tylko plików z jednego repozytorium.</p>
+</section><section id="commit" class="slide level2">
+<h2>Commit</h2>
+<p>Commit to pojedyńcza zmiana historii repozytorium. Git kontroluje historię zmian poprzez historię commitów.</p>
+</section><section id="branch" class="slide level2">
+<h2>Branch</h2>
+<p>Repozytorium może mieć kilka gałęzi. Można je później łączyć. Za pomocą testowych branchów pracuje się nad nowymi funkcjonalnościami w programach.</p>
+</section><section id="remote" class="slide level2">
+<h2>Remote</h2>
+<p>Nasze repozytorium może istnieć na serwerze. Adres miejsca w sieci, w którym znajduje się nasze repo to właśnie remote. Najczęściej będzie to <code>github.com/twoj_login/nazwa_twojego_repo</code></p>
+</section><section id="fork-pull-request" class="slide level2">
+<h2>Fork + pull request</h2>
+<p>Podstawowe narzędzie kolaboracji na GitHubie. Chcąc zmienić coś w czyimś repo, najpierw robimy jego forka, pobieramy do siebie na dysk, zmieniamy co trzeba, commitujemy po czym robimy pull request - pytamy się właściciela wyjściowego repo, czy nasze zmiany są ok.</p>
+</section></section>
+<section><section id="git---co-dalej" class="title-slide slide level1"><h1>Git - co dalej?</h1></section><section id="tryb-tekstowy" class="slide level2">
+<h2>Tryb tekstowy</h2>
+<ul>
+<li class="fragment">Terminal to <em>crème de la crème</em> pracy z Gitem</li>
+<li class="fragment">Zacznij od poprawnej instalacji Gita na swoim OSie</li>
+<li class="fragment"><code>git init</code> w katalogu, w którym ma być repo</li>
+<li class="fragment"><code>git help</code> daje pomoc</li>
+</ul>
+</section><section id="tutoriale-za-darmo" class="slide level2">
+<h2>Tutoriale (za darmo)</h2>
+<ul>
+<li class="fragment"><a href="https://git-scm.com/book/pl/v2" class="uri">https://git-scm.com/book/pl/v2</a> - cała książka, z fragmentami po polsku!</li>
+<li class="fragment"><a href="https://www.atlassian.com/git/tutorials" class="uri">https://www.atlassian.com/git/tutorials</a></li>
+<li class="fragment"><a href="https://try.github.io/levels/1/challenges/1" class="uri">https://try.github.io/levels/1/challenges/1</a> - 15-minutowy kurs interaktywny</li>
+<li class="fragment"><a href="https://www.rstudio.com/resources/webinars/collaboration-and-time-travel-version-control-with-git-github-and-rstudio/" class="uri">https://www.rstudio.com/resources/webinars/collaboration-and-time-travel-version-control-with-git-github-and-rstudio/</a> - Hadley Wickham o Gicie, kolaboracji i podróżach w czasie</li>
+</ul>
+</section><section id="git-w-ide-i-nie-tylko" class="slide level2">
+<h2>Git w IDE i nie tylko</h2>
+<ul>
+<li class="fragment"><code>R Studio</code> posiada implementację Gita</li>
+<li class="fragment">Edytor tekstu <code>Atom</code></li>
+<li class="fragment">GitHub Desktop</li>
+<li class="fragment">Inne programy GUI, np. GitCracken</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal_libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="reveal_libs/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

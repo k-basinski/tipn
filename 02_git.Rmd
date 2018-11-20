@@ -1,0 +1,137 @@
+---
+title: "TIPN 2 - Git jest git"
+author: Krzysztof Basiński
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+    lib_dir: reveal_libs
+    theme: serif
+    center: true
+    incremental: true
+---
+
+# Pliki i foldery - powtórka z podstawówki
+
+## Plik
+
+- Miejsce w pamięci, w którym trzymamy dane
+- Pliki mają różne typy (obrazki, dźwięki, filmy, itd.)
+- Odzwierciedleniem typu jest (najczęściej) **rozszerzenie** - litery po ostatniej kropce
+
+## Nazwy plików - dobre rady
+
+- Krótkie!
+- **BEZ SPACJI**
+- **BEZ POLSKICH ZNAKÓW**
+
+## Folder / katalog
+
+- Foldery to miejsca, w których trzymamy pliki i inne foldery
+- Foldery mają strukturę drzewa
+
+
+# `Git` jest git
+
+## Kontrola wersji - o co chodzi?
+- Praca nad projektem to proces, rozciągnięty w czasie
+- Powstają różne wersje. Która jest "właściwa"?
+- Problem kolaboracji
+
+## Po co mi kontrola wersji skoro mogę mieć kilka plików?
+```
+artykul.doc
+artykul2.doc
+artykul3.doc
+artykul36.doc
+artykulFinal.doc
+artykul6-06-2018.doc
+artykul_wersja_do_druku.doc
+Promotor_poprawki_artykul.doc
+nowe_poprawki_artykul.doc
+nowenajnowsze_poprawki_artykuuuulll.foc
+ZABIERZCIEMNIESTAD!!!!.doc
+```
+
+## Współpraca?
+
+## Git jest git
+- Git to jeden z systemów kontroli wersji
+- Stworzony dla programistów
+- Programy składają się z wielu długich plików
+- Git świetnie nadaje się do kolaboracji
+- <http://github.com>
+
+## GitHub
+- Serwis hostingowy dla **repozytoriów** gitowych
+- Służy do hostingu i kolaboracji
+- Darmowy dla publicznych repozytoriów
+- Społeczność: 20 milionów ludzi, 50 milionów repozytoriów
+- Głównie dla programistów, ale nie tylko
+
+## GitHub Desktop
+- Git działa w trybie tekstowym
+- GitHub Desktop to program z GUI - nakładka na Gita
+
+## To co nam daje ten Git?
+- Kontrola wersji:
+    + zapisana historia (prawie) wszystkich zmian
+    + możliwość cofnięcia się do dowolnego punktu w czasie
+    + łatwe porównywanie różnic pomiędzy wersjami
+    + branches - idealne do testowania nowych rozwiązań
+    
+## To co nam daje ten Git?
+- Myślenie "commitami"
+- Łączenie zmian dokonanych na różnych wersjach przez różnych ludzi
+- Uporządkowaną historię współpracy - wiadomo co kto zrobił
+- Mechanizm zamieszczania zmian na serwerze
+
+## Co daje GitHub?
+- Hosting dla twoich projektów
+- Symbiozę z Gitem (GitHub Desktop)
+- **Społeczność**
+- Narzędzia do zarządzania projektami
+- Hosting stron internetowych (!) - GitHub Pages
+- Wszystko to za darmo
+    
+## Słabe strony Gita
+- Jest trochę dziwaczny na poczatku
+- Może być bardzo frustrujący na początku
+- Słabo działa z plikami innymi niż tekstowe (np. docx, xlsx...)
+
+
+# Git - nomenklatura
+
+## Repozytorium (*repo*)
+Folder, w którym znajduje się jakiś projekt. Jedna historia zmian śledzona przez Gita dotyczy tylko plików z jednego repozytorium.
+
+## Commit
+Commit to pojedyńcza zmiana historii repozytorium. Git kontroluje historię zmian poprzez historię commitów.
+
+## Branch
+Repozytorium może mieć kilka gałęzi. Można je później łączyć. Za pomocą testowych branchów pracuje się nad nowymi funkcjonalnościami w programach.
+
+## Remote
+Nasze repozytorium może istnieć na serwerze. Adres miejsca w sieci, w którym znajduje się nasze repo to właśnie remote. Najczęściej będzie to `github.com/twoj_login/nazwa_twojego_repo`
+
+## Fork + pull request
+Podstawowe narzędzie kolaboracji na GitHubie. Chcąc zmienić coś w czyimś repo, najpierw robimy jego forka, pobieramy do siebie na dysk, zmieniamy co trzeba, commitujemy po czym robimy pull request - pytamy się właściciela wyjściowego repo, czy nasze zmiany są ok.
+
+# Git - co dalej?
+
+## Tryb tekstowy
+- Terminal to *crème de la crème* pracy z Gitem
+- Zacznij od poprawnej instalacji Gita na swoim OSie
+- `git init` w katalogu, w którym ma być repo
+- `git help` daje pomoc
+
+## Tutoriale (za darmo)
+- <https://git-scm.com/book/pl/v2> - cała książka, z fragmentami po polsku!
+- <https://www.atlassian.com/git/tutorials>
+- <https://try.github.io/levels/1/challenges/1> - 15-minutowy kurs interaktywny
+- <https://www.rstudio.com/resources/webinars/collaboration-and-time-travel-version-control-with-git-github-and-rstudio/> - Hadley Wickham o Gicie, kolaboracji i podróżach w czasie
+
+## Git w IDE i nie tylko
+- `R Studio` posiada implementację Gita
+- Edytor tekstu `Atom`
+- GitHub Desktop
+- Inne programy GUI, np. GitCracken

@@ -46,4 +46,9 @@ Tylko Windows:
 
 ## Prezentacje z zajęć:
 
-- [01 - Wstęp](index.html)
+- [01 - Wstęp](01_intro.html)
+- [02 - Pliki i Git](02_git.html)
+
+## Zadania
+
+- [Zadanie 1, 21.11.18](zadania/zad1.html)
