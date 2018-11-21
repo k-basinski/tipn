@@ -17,7 +17,15 @@ Wewnątrz folder `zad1` umieść trzy inne foldery, o dowolnie wybranych przez c
 #### 1.4. 
 Wewnątrz każdego z folderów utworzonych w `1.3.` stwórz za pomocą edytora tekstu plik tekstowy o dowolnej treści. Każdemu z plików nadaj poprawną nazwę i rozszerzenie txt.
 
-#### 1.5. 
+#### 1.5.
+W folderze `zad1` umieść plik `moj_komp.txt` w którym napisz garść informacji o swoim komputerze:
+
+- pojemność dysku
+- ilość pamięci RAM
+- rodzaj i prędkość procesora
+- czy system jest 32 czy 64-bitowy
+
+#### 1.6. 
 W folderze `zad1` umieść plik `kto_zacz.txt`. Napisz w nim, w osobnych linijkach, swoje imię i nazwisko, nr grupy i nr. albumu. Przykładowy plik `kto_zacz.txt`:
 
 ```
