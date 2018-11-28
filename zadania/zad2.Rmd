@@ -22,4 +22,4 @@ Przygotuj dokument w Markdown, który wykorzysta wszystkie funkcjonalności, o k
 - Obrazek 
 - Tabelę napisaną w markdown
 
-Przygotowany plik `.jpnbk` umieść w swoim repo, z folderze `zad2`.
+Przygotowany plik `zad2.md` umieść w swoim repo, z folderze `zad2`.
