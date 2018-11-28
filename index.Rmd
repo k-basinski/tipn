@@ -52,3 +52,4 @@ Tylko Windows:
 ## Zadania
 
 - [Zadanie 1, 21.11.18](zadania/zad1.html)
+- [Zadanie 2, 28.11.18](zadania/zad2.html)

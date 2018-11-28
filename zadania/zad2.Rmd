@@ -1,0 +1,25 @@
+---
+title: "Zadanie 2"
+output: html_document
+---
+
+#### 2.1
+
+Umieść swoje repozytorium z rozwiązaniami zadań (`tipn_zad`) na swoim koncie na <github.com>.
+
+#### 2.2
+
+Wyślij **pełny adres** swojego repozytorium wraz z Twoim imieniem i nazwiskiem na mój adres mailowy.
+
+#### 2.3
+
+Przygotuj dokument w Markdown, który wykorzysta wszystkie funkcjonalności, o których powiedzieliśmy na zajęciach. Dokument może dotyczyć czegokolwiek, ale niech będzie spójny i sensowny (zaskoczcie mnie! liczę na waszą kreatywność). Dokument musi zawierać następujące elementy:
+
+- Nagłówki co najmniej dwóch poziomów
+- Listę wypunktowaną
+- Listę numerowaną 
+- Link
+- Obrazek 
+- Tabelę napisaną w markdown
+
+Przygotowany plik `.jpnbk` umieść w swoim repo, z folderze `zad2`.
