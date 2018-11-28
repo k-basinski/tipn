@@ -19,7 +19,7 @@ Przygotuj dokument w Markdown, który wykorzysta wszystkie funkcjonalności, o k
 - Listę wypunktowaną
 - Listę numerowaną 
 - Link
-- Co najmniejjedno podkreślenie, co najmniej jedna kursywa i przekreślenie
+- Co najmniej jedno podkreślenie, co najmniej jedna kursywa i przekreślenie
 - Tabelę napisaną w markdown
 
 Przygotowany plik `zad2.md` umieść w swoim repo, z folderze `zad2`.
