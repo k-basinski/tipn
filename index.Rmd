@@ -57,7 +57,7 @@ Tylko Windows:
 
 ## Notebooki
 
-- [01 print i zmienne](01_print_zmienne.ipynb)
+- [01 print i zmienne](https://github.com/k-basinski/tipn/blob/master/01_print_zmienne.ipynb)
 
 
 ## Skąd wziąć pomoc?
