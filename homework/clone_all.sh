@@ -5,7 +5,7 @@ git clone https://github.com/BartekOstaszewski/tipn_zad b_ostaszewski/
 git clone https://github.com/Olakpz/tipn_zad a_kaszubowska/
 git clone https://github.com/nkalczuga/tipn_zad n_kalczuga/
 git clone https://github.com/barbaranaparlo/tipn_zad_wew  b_naparlo/
-git clone https://github.com/patrycjalech/tipn_zad/ p_lech/
+git clone https://github.com/patrycjalech/tipn_zad_nowe p_lech/
 git clone https://github.com/velueuur/tipn_zad a_lapinska/
 git clone https://github.com/laurakoczorowska/tipn_zad l_koczorowska/
 git clone https://github.com/a-miechowska/tipn_zad a_miechowska/
@@ -44,3 +44,4 @@ git clone https://github.com/Tatiana2121/tipn_zad t_szczukowska/
 git clone https://github.com/Polaczora/tipn_zad p_czora/
 git clone https://github.com/afoszcz/tipn_zad a_foszcz/
 git clone https://github.com/gviazda/tipn_zad j_gwiazda/
+git clone https://github.com/natcup/tipn_zad n_cupala/

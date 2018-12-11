@@ -1,0 +1,16 @@
+---
+title: "Zadanie 4"
+output: html_document
+---
+
+## Zadanie 4.1
+Napisz program który funkcją `input` pobiera od użytkownika dowolne zdanie, i:
+
+- jeżeli zdanie jest oznajmujące, zwraca napis "Rozumiem. Pewnie masz rację."
+- jeżeli zdanie jest pytające, zwraca napis "Nie wiem, nie znam się."
+- jeżeli zdanie jest wykrzyknikowe, zwraca napis "Nie krzycz! Słyszę się całkiem dobrze!"
+
+## Zadanie 4.2
+Napisz jesze raz program z zadania 3. Nazwy przedmiotów wprowadź do listy `przedmioty`. Tym razem wystarczy 4-5 przedmiotów. Niech użytkownik umieści swoje oceny w liście `oceny`. Listy powinny mieć odpowiadające sobie indeksy, np. jeśli ocena z metodologii ma indeks 3 na liście `przedmioty` to będzie miał ocenę z indeksem 3 na liście `oceny`. Zastosuj funkcję `input()`.  Niech elementy do listy dodają się metodą `append()`. 
+
+Pamiętaj ze funkcja `input()` zwraca typ `str` więc trzeba będzie zastosować funkcję `float()`. Żeby policzyć średnią musisz znać sumę elementów listy (`sum()`) oraz ilość elementów listy (`len()`). 
