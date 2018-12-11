@@ -60,7 +60,7 @@ Tylko Windows:
 ## Notebooki
 
 - [01 print i zmienne](https://github.com/k-basinski/tipn/blob/master/01_print_zmienne.ipynb)
-
+- [02 listy i if](https://github.com/k-basinski/tipn/blob/master/02_listy_if.ipynb)
 
 ## Skąd wziąć pomoc?
 
