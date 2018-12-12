@@ -10,7 +10,25 @@ Napisz program który funkcją `input` pobiera od użytkownika dowolne zdanie, i
 - jeżeli zdanie jest pytające, zwraca napis "Nie wiem, nie znam się."
 - jeżeli zdanie jest wykrzyknikowe, zwraca napis "Nie krzycz! Słyszę się całkiem dobrze!"
 
+Notebook zapisz w katalogu `zad4` pod nazwą `zad4_1.ipynb`
+
 ## Zadanie 4.2
 Napisz jesze raz program z zadania 3. Nazwy przedmiotów wprowadź do listy `przedmioty`. Tym razem wystarczy 4-5 przedmiotów. Niech użytkownik umieści swoje oceny w liście `oceny`. Listy powinny mieć odpowiadające sobie indeksy, np. jeśli ocena z metodologii ma indeks 3 na liście `przedmioty` to będzie miał ocenę z indeksem 3 na liście `oceny`. Zastosuj funkcję `input()`.  Niech elementy do listy dodają się metodą `append()`. 
 
 Pamiętaj ze funkcja `input()` zwraca typ `str` więc trzeba będzie zastosować funkcję `float()`. Żeby policzyć średnią musisz znać sumę elementów listy (`sum()`) oraz ilość elementów listy (`len()`). 
+
+
+Notebook zapisz w katalogu `zad4` pod nazwą `zad4_2.ipynb`
+
+Przykładowe dodawanie elementów do listy:
+
+```python
+pusta_lista = []
+rzecz = input("podaj rzecz:")
+pusta_lista.append(rzecz)
+rzecz = input("podaj 2 rzecz:")
+pusta_lista.append(rzecz)
+rzecz = input("podaj 3 rzecz:")
+pusta_lista.append(rzecz)
+print(pusta_lista)
+```

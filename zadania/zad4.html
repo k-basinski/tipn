@@ -318,11 +318,22 @@ $(document).ready(function () {
 <li>jeżeli zdanie jest pytające, zwraca napis “Nie wiem, nie znam się.”</li>
 <li>jeżeli zdanie jest wykrzyknikowe, zwraca napis “Nie krzycz! Słyszę się całkiem dobrze!”</li>
 </ul>
+<p>Notebook zapisz w katalogu <code>zad4</code> pod nazwą <code>zad4_1.ipynb</code></p>
 </div>
 <div id="zadanie-4.2" class="section level2">
 <h2>Zadanie 4.2</h2>
 <p>Napisz jesze raz program z zadania 3. Nazwy przedmiotów wprowadź do listy <code>przedmioty</code>. Tym razem wystarczy 4-5 przedmiotów. Niech użytkownik umieści swoje oceny w liście <code>oceny</code>. Listy powinny mieć odpowiadające sobie indeksy, np. jeśli ocena z metodologii ma indeks 3 na liście <code>przedmioty</code> to będzie miał ocenę z indeksem 3 na liście <code>oceny</code>. Zastosuj funkcję <code>input()</code>. Niech elementy do listy dodają się metodą <code>append()</code>.</p>
 <p>Pamiętaj ze funkcja <code>input()</code> zwraca typ <code>str</code> więc trzeba będzie zastosować funkcję <code>float()</code>. Żeby policzyć średnią musisz znać sumę elementów listy (<code>sum()</code>) oraz ilość elementów listy (<code>len()</code>).</p>
+<p>Notebook zapisz w katalogu <code>zad4</code> pod nazwą <code>zad4_2.ipynb</code></p>
+<p>Przykładowe dodawanie elementów do listy:</p>
+<pre class="python"><code>pusta_lista = []
+rzecz = input(&quot;podaj rzecz:&quot;)
+pusta_lista.append(rzecz)
+rzecz = input(&quot;podaj 2 rzecz:&quot;)
+pusta_lista.append(rzecz)
+rzecz = input(&quot;podaj 3 rzecz:&quot;)
+pusta_lista.append(rzecz)
+print(pusta_lista)</code></pre>
 </div>
 
 
