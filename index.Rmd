@@ -56,11 +56,13 @@ Tylko Windows:
 - [Zadanie 2, 28.11.18](zadania/zad2.html)
 - [Zadanie 3, 5.12.18](zadania/zad3.html)
 - [Zadanie 4, 12.12.18](zadania/zad4.html)
+- [Zadanie 5, 19.12.18](zadania/zad5.html)
 
 ## Notebooki
 
 - [01 print i zmienne](https://github.com/k-basinski/tipn/blob/master/01_print_zmienne.ipynb)
 - [02 listy i if](https://github.com/k-basinski/tipn/blob/master/02_listy_if.ipynb)
+- [03 pętle i input](https://github.com/k-basinski/tipn/blob/master/03_petle_input.ipynb)
 
 ## Skąd wziąć pomoc?
 

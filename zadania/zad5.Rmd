@@ -1,0 +1,18 @@
+---
+title: "Zadanie 5"
+output: html_document
+---
+
+Jak zwykle, wszystkie rozwiązania mają być w osobnych notebookach o nazwach `zad5_1.ipynb`, `zad5_2.ipynb` i `zad5_3.ipnyb` w folderze `zad5`.
+
+## Zadanie 5.1
+
+Napisz program, który pobiera od użytkownika liczbę (funkcja `input()` i zmiana typu na `int`!) i oblicza z niej silnię. Użyj pętli `while`.
+
+## Zadanie 5.2
+
+Napisz program, który pobiera od użytkownika liczbę i zwraca jej sumę cyfr. Podpowiedź - pewnie można to zrobić na miliard sposobów, ale jeden z nich zakłada zmianę typu liczby na `str`, po czym przejście się po tak stworzonym napisie pętlą `for` i...
+
+## Zadanie 5.3
+
+Napisz program, który pobiera od użytkownika zdanie (funkcja `input()`) i zwraca liczbę słów w tym zdaniu. Podpowiedź - liczba słów w zdaniu to najczęściej liczba spacji + 1.
