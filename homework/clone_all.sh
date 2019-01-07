@@ -10,7 +10,7 @@ git clone https://github.com/velueuur/tipn_zad a_lapinska/
 git clone https://github.com/laurakoczorowska/tipn_zad l_koczorowska/
 git clone https://github.com/a-miechowska/tipn_zad a_miechowska/
 git clone https://github.com/kardasm/tipn_zad m_kardas/
-git clone https://github.com/mochman1/tipn_zad m_ochman/
+git clone https://github.com/mochman1/tipn_zad m_ochman/ -b master
 git clone https://github.com/ilulinska/tipn_zad i_lulinska/
 
 # grupa 10:15
@@ -19,7 +19,7 @@ git clone https://github.com/pajdakaleksandra/tipn_zad a_pajdak/
 git clone https://github.com/RaraAvisPZJT/tipn_zad p_zakrzewski/
 git clone https://github.com/MWoronecka/tipn_zad m_woronecka/
 git clone https://github.com/gqsia/tipn_zad m_wilkosz/
-git clone https://github.com/ravinis/tipn_zad j_rawinis/
+git clone https://github.com/ravinis/tipn_zad j_rawinis/ -b nowa_galaz
 git clone https://github.com/martaswidzinska/tipn_zad m_swidzinska/
 git clone https://github.com/Awesolowska/tipn_zad a_wesolowska/
 git clone https://github.com/dariasobczuk/tipn_zad d_sobczuk/
