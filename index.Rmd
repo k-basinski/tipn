@@ -68,6 +68,9 @@ Tylko Windows:
 - [01 print i zmienne](https://github.com/k-basinski/tipn/blob/master/01_print_zmienne.ipynb)
 - [02 listy i if](https://github.com/k-basinski/tipn/blob/master/02_listy_if.ipynb)
 - [03 pętle i input](https://github.com/k-basinski/tipn/blob/master/03_petle_input.ipynb)
+- [04 funkcje](https://github.com/k-basinski/tipn/blob/master/04_funkcje.ipynb)
+- [05 moduły](https://github.com/k-basinski/tipn/blob/master/05_moduly.ipynb)
+
 
 ## Skąd wziąć pomoc?
 
