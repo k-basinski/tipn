@@ -72,6 +72,8 @@ Tylko Windows:
 - [04 funkcje](https://github.com/k-basinski/tipn/blob/master/04_funkcje.ipynb)
 - [05 moduły](https://github.com/k-basinski/tipn/blob/master/05_moduly.ipynb)
 
+## Zbiory danych
+- [drugs](https://github.com/k-basinski/tipn/raw/master/data/drugs.zip)
 
 ## Skąd wziąć pomoc?
 
