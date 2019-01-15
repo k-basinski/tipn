@@ -1,7 +1,7 @@
 #!#!/usr/bin/env bash
 
 # grupa 8:00
-git clone https://github.com/BartekOstaszewski/tipn_zad b_ostaszewski/
+git clone https://github.com/BartekOstaszewski/tipn_zadania b_ostaszewski/
 git clone https://github.com/Olakpz/tipn_zad a_kaszubowska/
 git clone https://github.com/nkalczuga/tipn_zad n_kalczuga/
 git clone https://github.com/barbaranaparlo/tipn_zad_wew  b_naparlo/
