@@ -27,7 +27,7 @@ git clone https://github.com/KacperWroblewski/tipn_zad k_wroblewski/
 git clone https://github.com/agatawaw/tipn_zad a_wawrzonkowska/
 git clone https://github.com/zosiarahn/tipn_zad z_rahn/
 git clone https://github.com/Myszasty/tipn_zad k_miszk/
-git clone https://github.com/zszukala/tipn_zad z_szukala/
+git clone https://github.com/zszukala/tipn_zad -b master z_szukala/
 
 # grupa 13:00
 git clone https://github.com/rudenho/tipn_zad j_delezuch/
