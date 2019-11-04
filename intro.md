@@ -4,14 +4,27 @@ author: "Krzysztof Basiński"
 theme: white
 ---
 
+### O mnie
+
+- k.basinski@gumed.edu.pl
+- Krzysztof Basiński
+- Zakład Badań nad Jakością Życia
+- Tuwima 15, pok. 312
+
 ### O tym przedmiocie
 
 - 10 spotkań po 3 godziny = 30 godzin
+- Zaliczenie z oceną
+- Można mieć 1 nieobecność
+
+### Ocena
+
 - Na każdych zajęciach robimy zadania
 - Kto nie zdąży, robi w domu
-- 1 nieobecność, ale wszystkie zadania muszą być!
-- Zaliczenie bez oceny
-- k.basinski@gumed.edu.pl
+- Każde zadanie ma 1 i 2 termin
+- Za poprawne rozwiązanie w 1 terminie 5 pkt.
+- Za poprawne rozwiązanie w 2 terminie 3 pkt.
+
 
 ### Czego się nauczymy?
 
