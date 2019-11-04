@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Krzysztof Basiński">
+  <title>Pliki i foldery</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reset.css">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Pliki i foldery</h1>
+  <p class="author">Krzysztof Basiński</p>
+</section>
+
+<section id="pliki" class="slide level3">
+<h3>Pliki</h3>
+<ul>
+<li class="fragment">Pliki przechowują dane</li>
+<li class="fragment">Pliki mają nazwy (name)</li>
+<li class="fragment">Pliki mają rozszerzenia (extensions)</li>
+</ul>
+</section>
+<section id="nazwy-i-rozszerzenia" class="slide level3">
+<h3>Nazwy i rozszerzenia</h3>
+<p><code>nazwa_pliku.rozszerzenie</code></p>
+</section>
+<section id="rozszerzenia" class="slide level3">
+<h3>Rozszerzenia</h3>
+<ul>
+<li class="fragment">Mówią o tym, jakiego rodzaju dane przechowuje plik</li>
+<li class="fragment">Zwyczajowo mają trzy litery, ale nie zawsze</li>
+<li class="fragment">Czasem podobne dane (np. dźwięk, wideo) przechowywane są w plikach o różnych rozszerzeniach</li>
+<li class="fragment">Rozszerzenia mówią o tym, <strong>jak</strong> przechowywane są dane</li>
+</ul>
+</section>
+<section id="przykładowe-rozszerzenia" class="slide level3">
+<h3>Przykładowe rozszerzenia</h3>
+<ul>
+<li class="fragment">jpg, png, gif</li>
+<li class="fragment">txt, docx, pages, pdf</li>
+<li class="fragment">xlsx, csv</li>
+<li class="fragment">mp3, wav, ogg, wma</li>
+<li class="fragment">mp4, mpeg, avi, mov</li>
+</ul>
+</section>
+<section id="więcej-rozszerzeń" class="slide level3">
+<h3>Więcej rozszerzeń</h3>
+<p><a href="https://en.wikipedia.org/wiki/List_of_filename_extensions" class="uri">https://en.wikipedia.org/wiki/List_of_filename_extensions</a></p>
+</section>
+<section id="plain-text" class="slide level3">
+<h3>Plain text</h3>
+<ul>
+<li class="fragment">Szczególnie interesujące są tzw. zwykłe pliki tekstowe (plain text)</li>
+<li class="fragment">Zwyczajowo rozszerzenie <code>.txt</code>, ale mogą mieć przeróżne</li>
+<li class="fragment">Pliki plain text otwierane są przez wiele różnych programów, w tym programistyczne edytory tekstu</li>
+<li class="fragment">W plikach plain text zapisuje się programy, ale nie tylko</li>
+</ul>
+</section>
+<section id="foldery" class="slide level3">
+<h3>Foldery</h3>
+<ul>
+<li class="fragment">Foldery przechowują pliki i inne foldery</li>
+<li class="fragment">Foldery służą do utrzymywania porządku</li>
+<li class="fragment">Foldery tworzą strukturę drzewa</li>
+</ul>
+</section>
+<section id="przykładowe-drzewo" class="slide level3">
+<h3>Przykładowe drzewo</h3>
+<pre><code>├── audi
+│   ├── a4.jpg
+│   ├── a6.jpg
+│   └── a8.jpg
+├── bmw
+│   ├── 320i.jpg
+│   ├── 750.jpg
+│   └── x5.jpg
+└── mercedes
+    ├── ciezarowe
+    │   ├── actros.jpg
+    │   ├── antos.jpg
+    │   └── unimog.jpg
+    └── osobowe
+        ├── c.jpg
+        ├── e.jpg
+        ├── gla.jpg
+        └── s.jpg</code></pre>
+</section>
+<section id="nazwy-plików-i-folderów" class="slide level3">
+<h3>Nazwy plików i folderów</h3>
+<ul>
+<li class="fragment">Nazwy plików są ważne w programowaniu</li>
+<li class="fragment">Nie stosujcie długich nazw!</li>
+<li class="fragment">Uwaga na rozszerzenia!</li>
+<li class="fragment">Uwaga na polskie znaki i znaki specjalne!</li>
+</ul>
+</section>
+<section id="nazwy---dobre-praktyki" class="slide level3">
+<h3>Nazwy - dobre praktyki</h3>
+<ul>
+<li class="fragment">Nazwa powinna mówić o zawartości pliku</li>
+<li class="fragment">Nie stosuj ŻADNYCH znaków specjalnych oprócz <code>_</code> (ew. <code>-</code>)</li>
+<li class="fragment">Nie stosuj polskich znaków</li>
+<li class="fragment">Długa nazwa = zła nazwa</li>
+<li class="fragment">Nie używaj wielkich liter</li>
+</ul>
+</section>
+<section id="złe-nazwy" class="slide level3">
+<h3>Złe nazwy</h3>
+<ul>
+<li class="fragment"><code>brzęczyszczykiewicz.jpg</code></li>
+<li class="fragment"><code>ala.ma.kota</code></li>
+<li class="fragment"><code>Curriculum vitae - Krzysztof Basiński utworzono dnia 13/11/2018 o go.docx</code></li>
+</ul>
+</section>
+<section id="dobre-nazwy" class="slide level3">
+<h3>Dobre nazwy</h3>
+<ul>
+<li class="fragment"><code>brzeczyszczykiewicz.jpg</code></li>
+<li class="fragment"><code>ala_ma_kota.txt</code></li>
+<li class="fragment"><code>cv.docx</code></li>
+</ul>
+</section>
+<section id="kurs-on-line" class="slide level3">
+<h3>Kurs on-line</h3>
+<p><a href="https://www.youtube.com/watch?v=k-EID5_2D9U" class="uri">https://www.youtube.com/watch?v=k-EID5_2D9U</a> <a href="https://www.youtube.com/watch?v=DGd48PGbnBs" class="uri">https://www.youtube.com/watch?v=DGd48PGbnBs</a></p>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

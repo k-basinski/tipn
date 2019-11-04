@@ -17,13 +17,13 @@ Na zajęcia potrzebujesz:
 
 ## Prezentacje z zajęć:
 
-- [01 - Wstęp](prezentacja.html)
+- [01 - Wstęp](intro.html)
 - [02 - Pliki i foldery](pliki.html)
 - [03 - Python](python.html)
 
 ## Zadania
 
-- [Zadanie 1, 13/11/2019](zadania/zad1.html)
+- [Zadanie 1, 13/11/2019](zadania/zad1)
 
 <!-- - [Zadanie 2, 28.11.18](zadania/zad2.html)
 - [Zadanie 3, 5.12.18](zadania/zad3.html)

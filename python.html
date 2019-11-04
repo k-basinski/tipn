@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Krzysztof Basiński">
+  <title>Python</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reset.css">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Python</h1>
+  <p class="author">Krzysztof Basiński</p>
+</section>
+
+<section id="python" class="slide level3">
+<h3>Python</h3>
+</section>
+<section id="python---co-to-takiego" class="slide level3">
+<h3>Python - co to takiego?</h3>
+<ul>
+<li class="fragment">interpretowany język programowania wysokiego poziomu</li>
+<li class="fragment">że co?</li>
+</ul>
+</section>
+<section id="python---co-to-takiego-1" class="slide level3">
+<h3>Python - co to takiego?</h3>
+<ul>
+<li class="fragment">interpretowany: nie potrzebujemy kompilować programów</li>
+<li class="fragment">interpretowany: potrzebujemy mieć interpreter Pythona zainstalowany na komputerze</li>
+<li class="fragment">wysokiego poziomu: nie trzeba przejmować się alokacją pamięci, deklarowaniem zmiennych, itd.</li>
+<li class="fragment">jeśli masz znać jeden język programowania, naucz się Pythona</li>
+</ul>
+</section>
+<section id="python---do-czego-służy" class="slide level3">
+<h3>Python - do czego służy?</h3>
+<ul>
+<li class="fragment">Do wszystkiego</li>
+<li class="fragment">Głównie zastosowania:
+<ul>
+<li class="fragment">aplikacje webowe</li>
+<li class="fragment">data science</li>
+<li class="fragment">uczenie maszynowe</li>
+<li class="fragment">skryptowanie</li>
+</ul></li>
+</ul>
+</section>
+<section id="zen-of-python" class="slide level3">
+<h3>Zen of Python</h3>
+<pre><code>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren&#39;t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you&#39;re Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it&#39;s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let&#39;s do more of those!</code></pre>
+</section>
+<section id="guido-van-rossum-1991" class="slide level3">
+<h3>Guido van Rossum (1991)</h3>
+<figure>
+<img data-src="img/guido.png" alt="" /><figcaption>Guido</figcaption>
+</figure>
+</section>
+<section id="wersje-pythona" class="slide level3">
+<h3>Wersje Pythona</h3>
+<ul>
+<li class="fragment">Python 2 ma skończyć swój żywot w 2020r., dalej możecie się natknąć na przykłady i tutoriale</li>
+<li class="fragment">My uczymy się tylko Pythona 3 (3.7)</li>
+</ul>
+</section>
+<section id="programy-do-pisania-programów-w-pythonie" class="slide level3">
+<h3>Programy do pisania programów w Pythonie</h3>
+<ul>
+<li class="fragment">Interpreter Pythona</li>
+<li class="fragment">IPython</li>
+<li class="fragment">Jupyter Lab</li>
+<li class="fragment">Wszystko to jest w Anaconda Distribution</li>
+</ul>
+</section>
+<section id="ipython" class="slide level3">
+<h3>IPython</h3>
+<ul>
+<li class="fragment">Narzędzie do programowania interaktywnego</li>
+<li class="fragment">Konsola, w której można “pogadać” z Pythonem</li>
+</ul>
+</section>
+<section id="jupyter-notebook" class="slide level3">
+<h3>Jupyter Notebook</h3>
+<ul>
+<li class="fragment"><em>Notes</em>, służący do programowania interaktywnego</li>
+<li class="fragment">Składa się z komórek (<em>cells</em>), zawierających kod programistyczny i tekst w Markdown</li>
+<li class="fragment">Jupyter wspiera wiele języków programowania, ale my będziemy korzystać z Pythona</li>
+</ul>
+</section>
+<section id="jupyter-lab" class="slide level3">
+<h3>Jupyter Lab</h3>
+<ul>
+<li class="fragment">Aplikacja, która w jednym miejscu skupia przeglądarke plików, Notebook, konsolę IPython, terminale i wiele innych fajnych rzeczy</li>
+<li class="fragment">Obecnie stabilna wersja 1.1</li>
+</ul>
+</section>
+<section id="chcesz-spróbować-potrzebujesz-tylko-przeglądarki" class="slide level3">
+<h3>Chcesz spróbować? Potrzebujesz tylko przeglądarki</h3>
+<p><a href="https://www.pythonanywhere.com" class="uri">https://www.pythonanywhere.com</a></p>
+</section>
+<section id="chcesz-spróbować-potrzebujesz-tylko-przeglądarki-1" class="slide level3">
+<h3>Chcesz spróbować? Potrzebujesz tylko przeglądarki</h3>
+<p><a href="https://www.pythonanywhere.com/try-ipython/" class="uri">https://www.pythonanywhere.com/try-ipython/</a></p>
+</section>
+<section id="chcesz-spróbować-potrzebujesz-tylko-przeglądarki-2" class="slide level3">
+<h3>Chcesz spróbować? Potrzebujesz tylko przeglądarki</h3>
+<p><a href="https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/try.jupyter.org?urlpath=lab" class="uri">https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/try.jupyter.org?urlpath=lab</a></p>
+</section>
+<section id="skąd-wziąć-pomoc" class="slide level3">
+<h3>Skąd wziąć pomoc?</h3>
+<p><a href="https://docs.python.org/3/" class="uri">https://docs.python.org/3/</a> <a href="https://jupyterlab.readthedocs.io/en/stable/" class="uri">https://jupyterlab.readthedocs.io/en/stable/</a> <a href="https://python.swaroopch.com" class="uri">https://python.swaroopch.com</a></p>
+</section>
+<section id="tutoriale" class="slide level3">
+<h3>Tutoriale</h3>
+<p><a href="https://www.codecademy.com/learn/learn-python-3" class="uri">https://www.codecademy.com/learn/learn-python-3</a> <a href="https://www.udemy.com/learn-python-programming-and-cryptocurrency-data-analysis/?src=sac&amp;kw=python" class="uri">https://www.udemy.com/learn-python-programming-and-cryptocurrency-data-analysis/?src=sac&amp;kw=python</a> <a href="https://www.datacamp.com" class="uri">https://www.datacamp.com</a> <a href="https://youtube.com/" class="uri">https://youtube.com/</a></p>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
