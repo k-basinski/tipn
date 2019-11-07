@@ -1,6 +1,10 @@
 # Zadanie 1
 
-Termin: 13/11/2019
+Termin 5 pkt: 13/11/2019
+
+Termin 4 pkt: 20/11/2019
+
+Termin 3 pkt: 27/11/2019
 
 #### 1.1. 
 Utwórz gdzieś na swoim komputerze folder `tipn`. To będzie folder, w którym będziesz trzymać rozwiązania zadań na ten przedmiot.
@@ -30,7 +34,7 @@ W folderze `zad1` umieść plik `moj_komp.txt` w którym napisz garść informac
 Na koniec drzewo katalogu tipn powinno wyglądać jakoś tak:
 
 ```
-.
+tipn
 └── zad1
     ├── audio
     │   └── piosenka.mp3

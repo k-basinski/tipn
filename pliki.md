@@ -47,10 +47,12 @@ theme: white
 - Foldery przechowują pliki i inne foldery
 - Foldery służą do utrzymywania porządku
 - Foldery tworzą strukturę drzewa
+- Miejsce w tej strukturze określa "ścieżka dostępu"
 
 ### Przykładowe drzewo
 
 ```
+auta
 ├── audi
 │   ├── a4.jpg
 │   ├── a6.jpg
@@ -70,6 +72,10 @@ theme: white
         ├── gla.jpg
         └── s.jpg
 ```
+
+### Przykładowa ścieżka dostępu
+
+- Plik `s.jpg` będzie miał ścieżkę `auta/mercedes/osobowe/s.jpg`
 
 ### Nazwy plików i folderów
 

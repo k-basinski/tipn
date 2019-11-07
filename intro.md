@@ -21,9 +21,16 @@ theme: white
 
 - Na każdych zajęciach robimy zadania
 - Kto nie zdąży, robi w domu
-- Każde zadanie ma 1 i 2 termin
+- Każde zadanie ma 1, 2 i 3 termin
+
+### Ocena
+
 - Za poprawne rozwiązanie w 1 terminie 5 pkt.
-- Za poprawne rozwiązanie w 2 terminie 3 pkt.
+- Za poprawne rozwiązanie w 2 terminie 4 pkt.
+- Za poprawne rozwiązanie w 3 terminie 3 pkt.
+- Po 3 terminie 0 pkt.
+- Ostatnie zadanie będzie projektem za 20 pkt.
+- Ocena końcowa = suma punktów / max punktów
 
 
 ### Czego się nauczymy?
@@ -36,7 +43,7 @@ theme: white
 ### Czego dokładnie się nauczymy?
 
 - Podstaw programowania w języku `Python`
-- Podstaw programowania interaktywnego (JupyterLab)
+- Podstaw programowania interaktywnego (JupyterLab, Jupyter Notebooks)
 
 ### Po co ci programowanie?
 
