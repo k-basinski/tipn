@@ -31,6 +31,11 @@ Na zajęcia potrzebujesz:
 - [Zadanie 5, 19.12.18](zadania/zad5.html)
 - [Zadanie 6, 9.01.19](zadania/zad6.html)
  -->
+
+## Markdown
+
+[Ściągę znajdziecie tu](markdown)
+
 ## Notebooki
 
 - [01 print i zmienne](https://github.com/k-basinski/tipn/blob/master/01_print_zmienne.ipynb)
