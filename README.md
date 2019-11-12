@@ -24,9 +24,9 @@ Na zajęcia potrzebujesz:
 ## Zadania
 
 - [Zadanie 1, 13/11/2019](zadania/zad1)
+- [Zadanie 2, 20/11/2019](zadania/zad2)
 
-<!-- - [Zadanie 2, 28.11.18](zadania/zad2.html)
-- [Zadanie 3, 5.12.18](zadania/zad3.html)
+<!-- - [Zadanie 3, 5.12.18](zadania/zad3.html)
 - [Zadanie 4, 12.12.18](zadania/zad4.html)
 - [Zadanie 5, 19.12.18](zadania/zad5.html)
 - [Zadanie 6, 9.01.19](zadania/zad6.html)

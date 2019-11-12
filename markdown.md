@@ -42,7 +42,7 @@ Alt-H2
 ##### H5
 ###### H6
 
-Alternatively, for H1 and H2, an underline-ish style:
+Alternatywnie, dla H1 i H2, można zastosować niby-podkreślenie:
 
 Alt-H1
 ======
@@ -98,15 +98,15 @@ Przekreślenie robi się podwójną tyldą. ~~Wymaż to.~~
 
 1. Pierwszy element listy numerowanej
 2. Kolejny element
-⋅⋅* Nieponumerowana pod-lista. 
+  * Nieponumerowana pod-lista. 
 1. Nieważne jakie cyfry, ważne żeby były cyfry (markdown sam numeruje)
-⋅⋅1. Numerowana podlista
+  1. Numerowana podlista
 4. Jeszcze jeden element.
 
-⋅⋅⋅Możesz zrobić poprawnie wcięte akapity wewnątrz elementów listy. Zwróć uwagę na pustą linię powyżej i na więcie (co najmniej jedna spacja, jednak trzy wyglądają lepiej w surowym Markdownie).
+   Możesz zrobić poprawnie wcięte akapity wewnątrz elementów listy. Zwróć uwagę na pustą linię powyżej i na więcie (co najmniej jedna spacja, jednak trzy wyglądają lepiej w surowym Markdownie).
 
-⋅⋅⋅By zrobić podział linii bez nowego paragrafu, potrzebujesz dwóch spacji wcięcia.⋅⋅
-⋅⋅⋅Zwróć uwagę, że ta linia jest osobno, ale wewnątrz tego samego akapitu⋅⋅
+   By zrobić podział linii bez nowego paragrafu, potrzebujesz dwóch spacji wcięcia.
+   Zwróć uwagę, że ta linia jest osobno, ale wewnątrz tego samego akapitu
 
 * Nienumerowane listy mogą używać gwiazdek
 - Albo minusów
@@ -183,21 +183,67 @@ Język niezdefiniowany więc nie ma kolorowania składni.
 ```
 </code></pre>
 
+Javascript:
 
 
 ```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
- 
+
+
+Python:
+
 ```python
 s = "Python syntax highlighting"
 print s
 ```
- 
+
+
+Niezdefiniowany język:
+
 ```
 Język niezdefiniowany więc nie ma kolorowania składni.
 ```
+
+<a name="tables"/>
+
+## Tables
+
+
+```no-highlight
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+```
+
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
 
 
 <a name="blockquotes"/>
