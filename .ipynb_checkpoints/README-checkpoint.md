@@ -41,6 +41,11 @@ Na zajęcia potrzebujesz:
 - [05 moduły](https://github.com/k-basinski/tipn/blob/master/05_moduly.ipynb)
 
 ## Zbiory danych
+
+- [słowa.zip](https://github.com/k-basinski/tipn/raw/master/data/slowa.zip)
+- [słowa.txt](https://github.com/k-basinski/tipn/raw/master/data/slowa.txt)
+- [words.zip](https://github.com/k-basinski/tipn/raw/master/data/words.zip)
+- [words.txt](https://github.com/k-basinski/tipn/raw/master/data/words.txt)
 - [drugs](https://github.com/k-basinski/tipn/raw/master/data/drugs.zip)
 
 ## Skąd wziąć pomoc?

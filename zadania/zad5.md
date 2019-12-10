@@ -22,10 +22,16 @@ Wyświetl dwadzieścia najpopularniejszch imion w kolejności alfabetycznej
 
 ## 5.4
 
-Wyświetl wszystkie imiona zaczynające się na Z
+Wyświetl wszystkie imiona zaczynające się na S w odwrotnej kolejności alfabetycznej (tj. od SZ do SA)
 
 ## 5.5 *
 
-Sprawdź (PROGRAMISTYCZNIE!), czy bardziej popularnym imieniem był Gracjan, czy Ryszard?
+Utwórz dwie zmienne - `imie1` i `imie2`, przechowujące dowolne, wprowadzone przez użytkownika imiona. Sprawdź (PROGRAMISTYCZNIE!), czy bardziej popularnym imieniem było `imie1`, czy `imie2`. Wyświetl komunikat w postaci:
+
+> Imię "imie1" było bardziej popularne niż imię "imie2"
+
+albo:
+
+> Imię "imie1" było mniej popularne niż imię "imie2"
 
 
