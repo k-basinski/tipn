@@ -46,6 +46,7 @@ Na zajęcia potrzebujesz:
 - [słowa.txt](https://github.com/k-basinski/tipn/raw/master/data/slowa.txt)
 - [words.zip](https://github.com/k-basinski/tipn/raw/master/data/words.zip)
 - [words.txt](https://github.com/k-basinski/tipn/raw/master/data/words.txt)
+- [small_words.zip](https://github.com/k-basinski/tipn/raw/master/data/small_words.zip)
 - [drugs](https://github.com/k-basinski/tipn/raw/master/data/drugs.zip)
 
 ## Skąd wziąć pomoc?
