@@ -1,8 +1,20 @@
-stół
-krzesło
+komoda
+szafa
 kanapa
-fotel
-fotel
+kanapa
+kanapa
+kanapa
+stolik
+krzesło
 fotel
 szafa
-szafa
+łóżko
+stół bilardowy
+stół bilardowy
+stół bilardowy
+stół bilardowy
+stół bilardowy
+stół bilardowy
+fotel
+stolik
+szezląg

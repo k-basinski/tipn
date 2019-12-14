@@ -8,6 +8,12 @@ Termin 3: 15/01/2020
 
 Stwórz nowy _notebook_. Zapisz go w folderze `zad5` pod nazwą `zad5.ipynb`. Ściągnij ze strony przedmiotu plik [imiona.zip](../data/imiona.zip), rozpakuj go i umieść zawartość w tym samym folderze. Plik zawiera listę frekwencyjną najpopularniejszych imion męskich w Polsce w 2017 roku.
 
+### Jeżeli pojawiają się błędy przy otwieraniu
+
+Spróbuj ściągnąć wersję Windowsowską pliku [imiona_cp.zip](../data/imiona_cp.zip) - powinna działać.
+
+W ostateczności ściągnij wersję bez polskich znaków - ta już w ogóle powinna działać [imiona_nopl.zip](../data/imiona_nopl.zip)
+
 ## 5.1
 
 Wyświetl dziesięć najpopularniejszych imion.
