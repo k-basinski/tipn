@@ -6,7 +6,7 @@
 1. Sprawdź pogodę w miejscu, w którym jesteś.
 2. Napisz dowolną grę przy użyciu [PyGame](https://www.pygame.org/)
 3. Napisz program do [gry w statki](https://en.wikipedia.org/wiki/Battleship_(game))
-4. Stwórz dowolną stronę internetową z [Django](https://www.djangoproject.com)
+4. Stwórz dowolną stronę internetową z [Django](https://www.djangoproject.com) albo w [Pelican](https://blog.getpelican.com)
 5. Stwórz dowolny eksperyment psychologiczny z [PsychoPy](https://www.psychopy.org)
 6. Stwórz program sprawdzający, czy podany numer karty kredytowej jest [poprawnym numerem karty kredytowej](https://en.wikipedia.org/wiki/Luhn_algorithm)
 7. Stwórz program przeliczający waluty, korzystający z aktualnego kursu NBP z <http://api.nbp.pl>.
@@ -46,7 +46,7 @@ Napisz program, który pobiera tekst z pliku i oblicza statystyki słów dla teg
 
 Przyjmij uproszczone wskaźniki słów, zdań i akapitów (np. za nowy akapit przyjmij wszystkie zdania zaczynające się od nowej linijki).
 
-### 3. Gra RPG
+### 3. Gra tekstowa
 
 Napisz [tekstową grę](https://en.wikipedia.org/wiki/Text-based_game) inspirowaną [Colossal Cave Adventure](https://www.amc.com/shows/halt-and-catch-fire/exclusives/colossal-cave-adventure). Gra powinna być fajna i zabawna. Mechanika dowolna, ale najprościej ograniczyć użytkownika do 2/3 komend w każdym momencie. Aby ułatwić pisanie, proponuję opis każdej "lokacji" zapisać w odrębnej linijce w pliku tekstowym.
 
@@ -65,6 +65,8 @@ Napisz program, który bierze podaną przez użytkownika liczbę i zamienia w li
 ### 7. Szyfrowanie 
 
 Napisz program, który odczytuje z pliku tekst, szyfruje go za pomocą dowolnego algorytmu szyfrującego z kluczem i zapisuje do innego pliku. Po podaniu właściwego klucza potrafi też odszyfrować zaszyfrowany tekst.
+
+<https://pl.wikipedia.org/wiki/Szyfr_Cezara>
 
 ### 8. Alfabet Morse’a
 

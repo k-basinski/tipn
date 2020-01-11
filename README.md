@@ -29,7 +29,7 @@ Na zajęcia potrzebujesz:
 - [Zadanie 4, 4/12/2019](zadania/zad4)
 - [Zadanie 5, 18/12/2019](zadania/zad5)
 - [Zadanie 6, 8/01/2020](zadania/zad6)
-
+- [Projekty](zadania/projekty)
 
 ## Markdown
 
